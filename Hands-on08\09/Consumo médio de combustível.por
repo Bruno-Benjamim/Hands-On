@@ -11,6 +11,6 @@ programa {
    escreva("Insira o combustível gasto pelo  veículo: ")
    leia(litros)
    consumo = quilometros / litros
-   escreva("O consumo médio de combustível do veículo é de:  ",consumo," km/L.\n")
+   escreva("O consumo médio de combustível do veículo é de: ",consumo," km/L.\n")
   }
 }
