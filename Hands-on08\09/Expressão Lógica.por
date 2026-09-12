@@ -5,6 +5,7 @@ programa {
        Variável 2 = x (variável inteira escolhida pelo programador)
        Variável 3 = y (variável inteira escolhida pelo programador)
        Variável 4 = expressao (variável lógica que calcula se o número escolhido pelo usuário confirma a declaração x < número < y)
+
     */
     logico expressao
     inteiro numero, x, y
