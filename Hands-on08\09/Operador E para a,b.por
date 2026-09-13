@@ -4,7 +4,6 @@ programa {
        Variável 1 = a (variável lógica com o valor determinado pela resposta do usuário)
        Variável 2 = b (variável lógica com o valor determinado pela resposta do usuário)
        operador E verifica se as duas variáveis são verdadeiras.
-
     */
     logico a , b
     escreva ("digite verdadeiro ou falso para a seguinte pergunta: está chovendo hoje?", "\n")
