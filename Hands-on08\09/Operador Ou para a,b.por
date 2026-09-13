@@ -6,9 +6,9 @@ programa {
        operador OU verifica se uma das duas variáveis é verdadeira.
     */
     logico a , b
-    escreva ("digite verdadeiro ou falso para a seguinte pergunta: Você gosta de música?", "\n")
+    escreva ("digite verdadeiro ou falso para a seguinte afirmação: Você gosta de música.", "\n")
     leia (a)
-    escreva ("digite verdadeiro ou falso para a seguinte pergunta: Você assiste filmes?", "\n")
+    escreva ("digite verdadeiro ou falso para a seguinte afirmação: Você assiste filmes.", "\n")
     leia (b)
     escreva ("O resultado de gostar de música ou filme é: ",a ou b,".")
   }
