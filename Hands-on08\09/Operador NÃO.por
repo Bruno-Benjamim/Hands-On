@@ -5,8 +5,8 @@ programa {
        Operador NÃO mostra o valor negado da variável.
     */
     logico a
-    escreva ("Digite verdadeiro ou falso para a seguinte afirmação: Você já foi ao cinema.", "\n")
+    escreva ("Digite verdadeiro ou falso para a seguinte afirmação: Você já foi ao cinema antes.", "\n")
     leia (a)
-    escreva ("Então, a afirmação de que vai ser sua primeira vez no cinema é ",nao a,".")
+    escreva ("Então, a afirmação de que vai ser sua primeira vez no cinema é ",nao(a),".")
   }
 }
