@@ -19,18 +19,18 @@ public class Questao2 {
                     break;
                 case 2:
                     System.out.println("Você escolheu Disney+.");
-                    System.out.println("Prepare a pipoca!");
+                    System.out.println("A magia vai começar!");
                     break;
                 case 3:
                     System.out.println("Você escolheu Prime Video.");
-                    System.out.println("Bom filme!");
+                    System.out.println("Senta na cadeira que agora vai!");
                     break;
                 case 4:
                     System.out.println("Você escolheu Spotify.");
-                    System.out.println("Coloque sua música favorita!");
+                    System.out.println("Se estiver em transporte público, utilize fone de ouvido!");
                     break;
                 case 5:
-                    System.out.println("Saindo...");
+                    System.out.println("Encerrando...");
                     break;
                 default:
                     System.out.println("Opção inválida.");
