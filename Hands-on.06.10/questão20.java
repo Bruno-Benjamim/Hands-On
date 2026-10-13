@@ -10,20 +10,20 @@ public class SerieMatematica {
 
         int n;
         int expoente = 2;
-        int fatorialN = 1;
+        int denominador = 1;
         int direcao = 1;
         int sinal = -1;
 
-        double x, potencia, termo, soma = 0;
+        double x, potencia, fatorial, termo, soma = 0;
 
         System.out.print("Informe a quantidade de termos: ");
         n = sc.nextInt();
 
-        System.out.print("Informe o valor de X: ");
+        System.out.print("Informe o valor positivo de X: ");
         x = sc.nextDouble();
 
-        if (n <= 0) {
-            System.out.println("A quantidade de termos deve ser positiva.");
+        if (n <= 0 || x <= 0) {
+            System.out.println("Informe N e X positivos.");
         } else {
 
             for (int i = 1; i <= n; i++) {
@@ -34,30 +34,33 @@ public class SerieMatematica {
                     potencia = potencia * x;
                 }
 
-                fatorialN = 1;
+                fatorial = 1;
 
-                for (int j = 1; j <= (expoente - 1); j++) {
-                    fatorialN = fatorialN * j;
+                for (int j = 1; j <= denominador; j++) {
+                    fatorial = fatorial * j;
                 }
 
-                termo = sinal * potencia / fatorialN;
+                termo = sinal * potencia / fatorial;
                 soma = soma + termo;
 
                 System.out.printf("Termo %d: %.6f%n", i, termo);
 
                 sinal = sinal * -1;
+                expoente++;
 
                 if (direcao == 1) {
-                    expoente++;
-
-                    if (expoente == 5) {
+                    if (denominador == 4) {
                         direcao = -1;
+                        denominador--;
+                    } else {
+                        denominador++;
                     }
                 } else {
-                    expoente--;
-
-                    if (expoente == 1) {
+                    if (denominador == 1) {
                         direcao = 1;
+                        denominador++;
+                    } else {
+                        denominador--;
                     }
                 }
             }
